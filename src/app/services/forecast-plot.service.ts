@@ -152,7 +152,7 @@ export class ForecastPlotService implements OnDestroy {
 
   constructor(private lookupService: LookupService, private dataService: DataService) {
     this.dateRange$ = this.lookupService.forecastDates$.pipe(map(dates => [
-      this.getNextSaturday(moment(dates.minimum).add(-3, 'w').startOf('day')),
+      this.getNextSaturday(moment('2020-03-02', 'YYYY-MM-DD').startOf('day')),
       this.getNextSaturday(moment(dates.maximum).add(6, 'w').startOf('day'))]
     ));
 
