@@ -9,13 +9,28 @@ export interface Contributor {
 
 export const contributors: Contributor[] = [
   {
+    name: 'CASUS', method: 'A Bayesian dynamic Generalized Linear Model (BGLM) is estimated using a Poisson stochastic distribution ', link: 'https://www.where2test.de/saxony',
+    model_name: 'CASUS-BGLM', paper_text: '', paper_url: ''
+  },
+  {
     name: 'Centre for Modelling of Biological and Social Processes', method: 'Simplified version of our SeirFilter model', link: 'https://www.medrxiv.org/content/10.1101/2021.02.16.21251834v1',
     model_name: 'bisop-seirfilterlite', paper_text: '(Paper)', paper_url: 'https://www.medrxiv.org/content/10.1101/2021.02.16.21251834v1'
   },
   { name: 'Covid Analytics, MIT Operations Research Center', method: 'Modified SEIR compartmental model', link: 'https://www.covidanalytics.io/',
     model_name: 'MIT_CovidAnalytics-DELPHI', paper_text: '(Paper)', paper_url: 'https://www.medrxiv.org/content/10.1101/2020.06.23.20138693v1'},
-  { name: 'Epiforecasts / London School of Hygiene and Tropical Medicine', method: '', link: 'https://epiforecasts.io/',
-    model_name: 'epiforecasts-EpiExpert & epiforecasts-EpiNow2', paper_text: '', paper_url: ''},
+  {
+    name: 'Epiforecasts / London School of Hygiene and Tropical Medicine', method: 'Mean ensemble of human predictions', link: 'https://epiforecasts.io/',
+    model_name: 'epiforecasts-EpiExpert', paper_text: '', paper_url: ''
+  },
+  //{
+  //  name: 'Epiforecasts / London School of Hygiene and Tropical Medicine', method: 'Forecast of cases and deaths based on human forecasts of Rt', link: 'https://epiforecasts.io/',
+  //  model_name: 'epiforecasts-EpiExpert_Rt', paper_text: '', paper_url: ''
+  //},
+  {
+    name: 'Epiforecasts / London School of Hygiene and Tropical Medicine', method: 'Semi-mechanistic estimation of the time-varying reproduction number for latent infections mapped to reported cases/deaths', link: 'https://epiforecasts.io/EpiNow2',
+    model_name: 'epiforecasts-EpiNow2', paper_text: '', paper_url: ''
+  },
+
   { name: 'Faculty of Mathematics, Informatics and Mechanics, University of Warsaw', method: '', link: 'https://www.mimuw.edu.pl/en/faculty',
     model_name: 'MIMUW-StochSEIR', paper_text: '', paper_url: ''},
   { name: 'Frankfurt Institute for Advanced Studies & Forschungszentrum Jülich', method: 'Extended SEIR compartmental model', link: 'https://www.medrxiv.org/content/10.1101/2020.04.18.20069955v1',
@@ -29,7 +44,20 @@ export const contributors: Contributor[] = [
   { name: 'ILM', method: 'Extended Kalman filter based on reproduction equation', link: 'https://github.com/Stochastik-TU-Ilmenau',
     model_name: 'ILM-EKF', paper_text: '', paper_url: ''},
   { name: 'IMISE/GenStat, University of Leipzig', method: 'SECIR compartmental model', link: 'https://www.imise.uni-leipzig.de/en/homepage',
-    model_name: 'LeipzigIMISE-SECIR', paper_text: '', paper_url: ''},
+    model_name: 'LeipzigIMISE-SECIR', paper_text: '', paper_url: ''
+  },
+  //{
+  //  name: 'Imperial College London', method: 'Uses both cases and deaths to estimate an observed CFR. Projections are based on the estimated CFR.', link: 'https://mrc-ide.github.io/covid19-short-term-forecasts',
+  //  model_name: 'Imperial-DeCa', paper_text: '', paper_url: ''
+  //},
+  //{
+  //  name: 'Imperial College London', method: 'Jointly estimates initial incidence and reproduction number', link: 'https://mrc-ide.github.io/covid19-short-term-forecasts',
+  //  model_name: 'Imperial-RtI0', paper_text: '', paper_url: ''
+  //},
+  {
+    name: 'Imperial College London', method: 'Optimises the window over which reproduction number is assumed to be constant', link: 'https://mrc-ide.github.io/covid19-short-term-forecasts',
+    model_name: 'Imperial-sbkp', paper_text: '', paper_url: ''
+  },
   { name: 'Institute of Global Health, University of Geneva / Swiss Data Science Center', method: 'Robust seasonal trend decomposition and extrapolation', link: 'https://renkulab.shinyapps.io/COVID-19-Epidemic-Forecasting/',
     model_name: 'SDSC-ISG_TrendModel', paper_text: '', paper_url: ''},
   { name: 'Institute of Health Metrics and Evaluation (IHME), University of Washington', method: 'Hybrid of statistical and disease transmission model', link: 'https://covid19.healthdata.org/',

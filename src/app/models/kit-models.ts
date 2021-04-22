@@ -4,6 +4,7 @@ export interface KITModel {
 }
 
 export const kitmodels: KITModel[] = [
+  { model_name: 'EuroCOVIDhub-ensemble', method: 'An ensemble, or model average, of submitted forecasts to the European COVID-19 Forecast Hub'},
   { model_name: 'KITCOVIDhub-median_ensemble', method: 'An average of forecasts submitted by different models, computed as the median (per quantile)' },
   { model_name: 'KITCOVIDhub-mean_ensemble', method: 'An average of forecasts submitted by different models, computed as the mean (per quantile)' },
   { model_name: 'KITCOVIDhub-inverse_wis_ensemble', method: 'A weighted average of forecasts submitted by different models, with weights computed from the average performance over the last three weeks' },

@@ -15,6 +15,10 @@
     exchange with the <a href="https://covid19forecasthub.org/doc/" target="_blank">US COVID-19 ForecastHub</a> run by
     the <a href="https://reichlab.io/" target="_blank">Reich Lab</a> at the University of Massachusetts, Amherst.
   </p>
+
+  <p>
+    As of April 2021, <b>all national-level forecasts are synchronized with the <a href="https://covid19forecasthub.eu/" target="_blank">European COVID-19 Forecast Hub</a></b>, while we continue to collect subnational forecasts independently.
+  </p>
   <p>
     This project is public and all forecasts can be downloaded from our <a
       href="https://github.com/KITmetricslab/covid19-forecast-hub-de" target="_blank">github repository</a>. More ample
@@ -25,6 +29,7 @@
   <p>
     The German and Polish COVID-19 Forecast Hub also forms the basis of a pre-registered forecast evaluation study on
     which we plan to report in 2021. The protocol is available <a href="https://osf.io/cy937/registrations" target="_blank">here</a>.
+    Results for the period from October through December 2020 are available in this <a href="https://www.medrxiv.org/content/10.1101/2020.12.24.20248826v2.full" target="_blank">preprint</a>.
   </p>
 
   <h4 class="display-4">Forecast Targets</h4>
@@ -54,8 +59,6 @@
   <li> Forecasters are asked to quantify the uncertainty of their forecasts via prediction intervals. However, the coverage of prediction intervals has empirically
   been lower than the nominal levels (i.e. 95% prediction intervals contained the eventually observed value in less than 95% of the cases).
   In other words, <b>uncertainty has been underestimated</b> and forecasts were on average too confident.</li>
-  <li>Predictability during the <b>Christmas</b> period with new lockdown measures in Germany seems low and forecasts should be interpreted particularly cautiously. Not all models may be able to reflect the changed circumstances appropriately.</li>
-  <li> Several forecasts from 28 December seem to be affected by reporting artifacts from the previous week. We computed the ensemble forecasts without these member forecasts (which is in line with our pre-registered procedures). Nonetheless, we must assume that the ensemble forecast is affected by <b>reporting artifacts from the Christmas week</b> and emphasize that predictability is currently low. </li>
   </ul>
   
 
@@ -82,10 +85,12 @@
   </p>
 
   <ul>
-    <li><b>KITCOVIDhub-median_ensemble</b> <br> An average of forecasts submitted by different models, computed as the median (per quantile). </li>
-    <li><b>KITCOVIDhub-mean_ensemble</b> <br> An average of forecasts submitted by different models, computed as the mean (per quantile). </li>
-    <li><b>KITCOVIDhub-inverse_WIS_ensemble</b> <br> A weighted average of forecasts submitted by different models,
-    with weights computed from the average performance over the last three weeks.</li>
+    <li><b>KITCOVIDhub-median_ensemble</b> (until March 2021) <br> An average of forecasts submitted by different models, computed as the median (per quantile). </li>
+    <li><b>EuroCOVIDhub-ensemble</b> (since April 2021) /<b> KITCOVIDhub-mean_ensemble</b> (until March 2021) <br> An average of forecasts submitted by different models, computed as the mean (per quantile). </li>
+    <li>
+      <b>KITCOVIDhub-inverse_WIS_ensemble</b> (until March 2021) <br> A weighted average of forecasts submitted by different models,
+      with weights computed from the average performance over the last three weeks.
+    </li>
   </ul>
 
   <h4 class="display-4">Baselines</h4>
